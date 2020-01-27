@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>Baggage-chat</title>
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-    <!-- <style>
+    <!-- <link href="css/style.css" type="text/css" rel="stylesheet"> -->
+    <style>
       * { 
     margin: 0; padding: 0; box-sizing: border-box; 
 }
@@ -19,7 +19,7 @@ form {
     position: fixed; 
     bottom: 0; 
     width: 800px; 
-    margin-right: auto;
+    
     
     
 }
@@ -36,6 +36,7 @@ form button {
     padding: 10px; 
     font-weight: bold;
     border-radius: 3px;
+    color:azure;
 }
 #messages { 
     list-style-type: none; 
@@ -47,7 +48,7 @@ form button {
     height: 500px;
     border-radius: 10px;
     background-color: #fff;
-    opacity: 70%;
+    opacity: 90%;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -61,16 +62,16 @@ form button {
 #messages li:nth-child(odd) { 
     background: #eee; 
 }
-    </style> -->
+    </style>
 
   </head>
   <body>
     <ul id="messages">
-      
+      <form action="">
+        <input id="m" autocomplete="off" /><button>Send</button>
+      </form>
     </ul>
-    <form action="">
-      <input id="m" autocomplete="off" /><button>Send</button>
-    </form>
+   
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
