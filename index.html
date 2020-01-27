@@ -9,10 +9,18 @@
       }
       body { 
           font: 13px Helvetica, Arial; 
-          /* background-image: URL("./images/baggage-hp.jpg")  no-repeat; */
-          background-color:rgb(250, 218, 204) ;
-          background-size: cover;
           
+          background-color:rgb(223, 210, 204) ;
+          
+          
+      }
+
+      .bg {
+        background-image: URL("./images/baggage-hp.jpg") ;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100%;
       }
       form { 
           background: rgb(54, 45, 94); 
@@ -71,12 +79,14 @@
 
   </head>
   <body>
-    <img src="baggage-hp.jpg">
-    <ul id="messages">
-      <form action="">
-        <input id="m" autocomplete="off" /><button>Send</button>
-      </form>
-    </ul>
+    <div class="bg">
+      <ul id="messages">
+        <form action="">
+          <input id="m" autocomplete="off" /><button>Send</button>
+        </form>
+      </ul>
+    </div>
+    
    
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
