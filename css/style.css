@@ -3,6 +3,10 @@
 }
 body { 
     font: 13px Helvetica, Arial; 
+    background: url("../images/baggage-hp.jpg")  no-repeat;
+    /* background-color:rgb(250, 218, 204) ; */
+    background-size: cover;
+    
 }
 form { 
     background: #000; 
