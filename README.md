@@ -1,2 +1,6 @@
-# baggage-chat
-new repo for testing css configurations on a working chat widget
+Chat app from git-hub, testing to see if MongoDB integration works
+
+npm install
+
+npm start
+
