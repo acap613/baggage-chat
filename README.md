@@ -1,5 +1,5 @@
 
-Chat app fusing Socket.io, testing to see if MongoDB integration works
+Chat app fusing Socket.io, testing to see if MongoDB integration works. Never got the chapp-app to work fully with the rest of Baggage, but it works on its own and could be a useful widget to add to further projects.
 
 
 npm install
